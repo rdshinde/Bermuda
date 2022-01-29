@@ -1,2 +1,2 @@
 # Bermuda
-Triangle of easy, fast and scalable CSS.
+The triangle of easy, fast and scalable CSS.
