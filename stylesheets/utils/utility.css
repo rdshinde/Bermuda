@@ -1,0 +1,71 @@
+@import url("../abstracts/colors.css");
+@import url("../abstracts/variables.css");
+
+/************
+Utility Classes 
+************/
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: var(--p-md);
+  position: relative;
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.bg-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+
+.transition {
+  transition: 1s, color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-rounded-sm {
+  border-radius: var(--scale-sm);
+}
+.border-rounded-md {
+  border-radius: var(--scale-md);
+}
+.border-rounded-lg {
+  border-radius: var(--scale-lg);
+}
+.border-rounded-full {
+  border-radius: 50%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+svg,
+i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: inherit;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

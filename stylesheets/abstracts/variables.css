@@ -1,0 +1,48 @@
+:root {
+  /* Scale */
+  --scale-sm: 0.5rem;
+
+  --scale-md: 1rem;
+
+  --scale-lg: 2rem;
+
+  --scale-xl: 2.5rem;
+
+  --scale-xxl: 4rem;
+
+  /* Margin Style Variables */
+
+  --m-sm: 0.5;
+
+  --m-md: 1rem;
+
+  --m-lg: 2rem;
+
+  --m-xl: 2.5rem;
+
+  --m-xxl: 4rem;
+
+  /* Padding Style Variables */
+
+  --p-sm: 0.5rem;
+
+  --p-md: 1rem;
+
+  --p-lg: 2rem;
+
+  --p-xl: 2.5rem;
+
+  --p-xxl: 2.5rem;
+
+  /* Gap Style Variables */
+
+  --gap-sm: 0.5rem;
+
+  --gap-md: 1rem;
+
+  --gap-lg: 2rem;
+
+  --gap-xl: 2.5rem;
+
+  --gap-xxl: 2.5rem;
+}
