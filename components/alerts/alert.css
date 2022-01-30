@@ -1,0 +1,25 @@
+.alert {
+    font-size: 1rem;
+    width: 100%;
+    padding: var(--scale-md);
+    color: var(--off-white);
+    display: flex;
+    align-items: center;
+  }
+  
+  .alert-primary {
+    background-color: var(--default-color);
+  }
+  .alert-error {
+    background-color: var(--danger-color);
+  }
+  .alert-success {
+    background-color: var(--success-color);
+  }
+  .alert-warning {
+    background-color: var(--warning-color);
+  }
+  
+  .alert__dismiss-btn{
+      margin-left: auto;
+  }
