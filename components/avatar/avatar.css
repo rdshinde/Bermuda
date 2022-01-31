@@ -28,6 +28,6 @@
   height: var(--scale-xxl);
   margin: var(--scale-sm);
 }
-.avatar-square{
-    border-radius: var(--scale-sm);
+.avatar-square {
+  border-radius: var(--scale-sm);
 }
