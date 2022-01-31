@@ -1,0 +1,140 @@
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  outline: none;
+  padding: var(--scale-sm) var(--scale-md);
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-default {
+  background-color: var(--default-color);
+  color: var(--off-white);
+}
+
+.btn-default:hover {
+  background-color: var(--default-hover);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--default-text-color);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: var(--off-white);
+}
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  color: var(--off-white);
+}
+.btn-success:hover {
+  background-color: var(--success-hover);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  color: var(--off-white);
+}
+.btn-warning:hover {
+  background-color: var(--warning-hover);
+}
+
+.btn-link {
+  color: var(--active-color);
+}
+.btn-link:hover {
+  color: var(--active-hover);
+}
+
+.btn-primary-outline {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+.btn-default-outline {
+  color: var(--default-color);
+  border: 1px solid var(--default-color);
+}
+.btn-default-outline:hover {
+  background-color: var(--default-color);
+  color: var(--off-white);
+}
+.btn-secondary-outline {
+  color: var(--default-text-color);
+  border: 1px solid var(--default-text-color);
+}
+.btn-secondary-outline:hover {
+  background-color: var(--default-text-color);
+  color: var(--secondary-color);
+}
+.btn-danger-outline {
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+.btn-danger-outline:hover {
+  background-color: var(--danger-color);
+  color: var(--off-white);
+}
+.btn-success-outline {
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+.btn-success-outline:hover {
+  background-color: var(--success-color);
+  color: var(--off-white);
+}
+.btn-warning-outline {
+  color: var(--warning-color);
+  border: 1px solid var(--warning-color);
+}
+.btn-warning-outline:hover {
+  background-color: var(--warning-color);
+  color: var(--off-white);
+}
+.btn-link-outline {
+  color: var(--active-color);
+  border: 1px solid var(--active-color);
+}
+.btn-link-outline:hover {
+  background-color: var(--active-color);
+  color: var(--off-white);
+}
+.btn-disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+h2 {
+  padding: 1rem;
+}
+.btn-icon {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.btn__icon {
+  height: auto;
+  max-width: 50%;
+  padding: 0 var(--scale-sm) 0 0;
+}

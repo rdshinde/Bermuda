@@ -1,15 +1,16 @@
 :root {
   --default-text-color: #221d23;
   --defalult-bg-color: #ffffff;
-  --primary-color: #f18f01;
-  --default-color: #91a6ff;
+  --default-color: #f18f01;
+  --primary-color: #4265ff;
   --secondary-color: #f4f4ed;
   --danger-color: #f44336;
   --success-color: #4caf50;
   --warning-color: hsl(46, 100%, 45%);
 
   --text-hover: hsl(290, 9%, 8%);
-  --primary-hover: hsl(229, 100%, 63%);
+  --default-hover: hsl(36, 99%, 40%);
+  --primary-hover: hsl(229, 100%, 53%);
   --secondary-hover: hsl(60, 24%, 79%);
   --danger-hover: hsl(4, 92%, 40%);
   --success-hover: hsl(122, 39%, 34%);

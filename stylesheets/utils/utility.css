@@ -68,4 +68,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+.shadow-lg{
+  box-shadow: #00000059 0px 5px 15px;
+}
 
