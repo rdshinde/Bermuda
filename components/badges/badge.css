@@ -1,0 +1,59 @@
+/* General Badge Class */
+.badge {
+  align-items: center;
+  display: flex;
+  font-size: 0.5rem;
+  height: var(--scale-sm);
+  justify-content: center;
+  padding: 0.3rem;
+  position: absolute;
+  width: var(--scale-sm);
+}
+
+/* Classes for badge positioning */
+.badge-top-right {
+  right: -1em;
+  top: -0.8em;
+}
+.badge-top-left {
+  left: -1em;
+  top: -0.8em;
+}
+
+/* Class for badge container */
+.badge__container {
+  height: var(--scale-lg);
+  margin: var(--scale-lg);
+  position: relative;
+  width: var(--scale-lg);
+}
+
+/* General class for avatars' badge */
+.avatar__badge {
+  border-radius: 50%;
+  border: 0.1px solid var(--off-white);
+  bottom: var(--scale-sm);
+  height: var(--scale-sm);
+  padding: 0%;
+  position: absolute;
+  right: 25%;
+  width: var(--scale-sm);
+  z-index: 1;
+}
+
+/* Class for avatar badge container */
+.avatar__badge-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Classes for different modes of avatar badge */
+.avatar__badge-container .online {
+  background-color: var(--success-color);
+}
+.avatar__badge-container .offline {
+  background-color: var(--secondary-hover);
+}
+.avatar__badge-container .dnd {
+  background-color: var(--danger-hover);
+}
