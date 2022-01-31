@@ -1,0 +1,33 @@
+@import url("../style.css");
+
+.avatar {
+  display: inline-block;
+  border-radius: 50%;
+  width: var(--scale-xl);
+  height: var(--scale-xl);
+  margin: var(--scale-sm);
+}
+.avatar-sm {
+  display: inline-block;
+  border-radius: 50%;
+  width: var(--scale-lg);
+  height: var(--scale-lg);
+  margin: var(--scale-sm);
+}
+.avatar-md {
+  display: inline-block;
+  border-radius: 50%;
+  width: var(--scale-xl);
+  height: var(--scale-xl);
+  margin: var(--scale-sm);
+}
+.avatar-lg {
+  display: inline-block;
+  border-radius: 50%;
+  width: var(--scale-xxl);
+  height: var(--scale-xxl);
+  margin: var(--scale-sm);
+}
+.avatar-square{
+    border-radius: var(--scale-sm);
+}
