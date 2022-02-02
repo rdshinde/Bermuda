@@ -1,0 +1,104 @@
+/* Classes for Card Components */
+.card {
+  display: inline-block;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid var(--secondary-hover);
+  margin: var(--scale-lg);
+  position: relative;
+}
+/* Defining cards' width */
+.card-simple,
+.card-over-image,
+.card-with-dismiss,
+.card-with-badge {
+  max-width: 280px;
+}
+
+.card__header {
+  font-weight: 600;
+  padding: var(--scale-md);
+}
+
+.card__img-container {
+  position: relative;
+}
+
+/* Style for cards' body content */
+.card__content {
+  font-size: 1rem;
+  line-height: 1.3;
+  padding: var(--scale-md);
+}
+
+/* Styling for cards' footer */
+.card__footer {
+  display: flex;
+  margin-bottom: var(--scale-md);
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for image overlay card*/
+.over-the-image {
+  top: 0%;
+  position: absolute;
+  color: white;
+  padding: var(--scale-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-with-badge {
+  padding-top: 0.3rem;
+}
+
+.card-with-badge .card__container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+/* Badge Styling for card */
+.card-with-badge::before {
+  position: absolute;
+  content: "";
+  background: var(--primary-hover);
+  height: 25px;
+  width: 25px;
+  top: 2.1rem;
+  right: -0.79rem;
+  transform: rotate(45deg);
+}
+.card-with-badge::after {
+  position: absolute;
+  content: attr(badge-data);
+  font-weight: 500;
+  top: 14.5px;
+  right: -18px;
+  padding: 0.5rem;
+  width: 30%;
+  background: var(--primary-color);
+  color: var(--off-white);
+  text-align: center;
+  box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+/* Styling for card with dismiss btn */
+.card-with-dismiss .card__dismiss-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--scale-sm);
+  cursor: pointer;
+  transition: all 1s;
+}
+.card__dismiss-btn:hover::after {
+  content: "Dismiss";
+  padding-left: var(--scale-sm);
+}
+/* Styling for avatar in card header of simple card*/
+.card__header-with-avatar .card__header {
+  display: flex;
+  align-items: center;
+}
