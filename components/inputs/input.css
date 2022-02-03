@@ -13,9 +13,8 @@ input[type="search"],
 input[type="url"] {
   background-color: var(--default-bg-color);
   border: 1px solid var(--secondary-hover);
-  float: left;
   margin: var(--scale-sm) 0;
-  outline: none;
+  outline: 1px solid transparent;
   padding: var(--scale-sm) var(--scale-md);
   width: 95%;
 }
