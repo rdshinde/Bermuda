@@ -1,0 +1,54 @@
+/* Styling for list component */
+.list {
+  background-color: var(--off-white);
+  margin: var(--scale-md);
+  max-width: 95%;
+  padding: 0 var(--scale-sm) var(--scale-sm);
+  width: 12rem;
+  color: var(--default-text-color);
+}
+/* List Title styling */
+.list__title {
+  border-bottom: 1px solid var(--default-text-color);
+  font-weight: 600;
+  padding: var(--scale-md) var(--scale-sm);
+}
+/* List elements styling */
+.list li {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: var(--scale-md) var(--scale-sm);
+  transition: all 0.3s ease-in-out;
+}
+/* Nested list styling  */
+.list .nested-list {
+  padding: var(--scale-sm) var(--scale-sm) 0;
+}
+/* Nested list elemets styling */
+.list .nested-list li {
+  padding-left: var(--scale-md);
+  transition: all 0.3s ease-in-out;
+}
+/* Nested list title styling */
+.nested-list .nested-list__title {
+  font-weight: 600;
+  padding: 0 0 var(--scale-sm);
+}
+/* On hover effect */
+.list li:hover,
+.list .nested-list li:hover {
+  cursor: pointer;
+  transform: translate(2%);
+}
+/* Scrollable list styling */
+.list-scroll {
+  max-height: 22.5rem;
+  overflow-y: scroll;
+  position: relative;
+}
+.list-scroll .list__title {
+  background-color: var(--off-white);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
