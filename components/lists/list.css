@@ -43,7 +43,7 @@
 /* Scrollable list styling */
 .list-scroll {
   max-height: 22.5rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 .list-scroll .list__title {
