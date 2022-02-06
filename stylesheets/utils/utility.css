@@ -21,7 +21,6 @@ Utility Classes
   color: var(--dark-color);
 }
 
-
 .transition {
   transition: 1s, color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -68,7 +67,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-.shadow-lg{
+.shadow-lg {
   box-shadow: #00000059 0px 5px 15px;
 }
-
+.hide {
+  display: none;
+}
