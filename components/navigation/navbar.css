@@ -1,0 +1,55 @@
+/* Styling for navbar */
+.nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--scale-sm);
+  width: 100%;
+}
+.nav a {
+  color: var(--default-text-color);
+  text-decoration: none;
+}
+.nav__links {
+  margin-right: var(--scale-lg);
+}
+.nav__logo {
+  margin-left: var(--scale-lg);
+}
+
+.nav__links a:hover {
+  color: var(--active-color);
+}
+.nav ul {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+}
+.nav ul li {
+  margin: 0 var(--scale-sm);
+}
+
+/* Styling For Dark Navbar */
+.nav__bg-dark {
+  background-color: var(--dark-color);
+}
+.nav__bg-dark a,
+.nav__bg-dark * {
+  color: var(--off-white);
+}
+
+/* Adding Breakpoints */
+@media only screen and (max-width: 480px) {
+  .nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__links,
+  .nav__logo {
+    margin: 0;
+  }
+  .nav ul {
+    margin: 0;
+  }
+}
