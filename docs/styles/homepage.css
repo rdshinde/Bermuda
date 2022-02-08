@@ -1,0 +1,128 @@
+@import url("../../style.css");
+
+
+body {
+  font-size: 100%;
+  background-color: var(--defalult-bg-color);
+  color: var(--default-text-color);
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.main-content {
+  position: relative;
+  height: max-content;
+  margin: auto;
+  min-height: 100vh;
+  width: 80%;
+  text-align: center;
+}
+.main-content .main-container {
+  margin: auto;
+  max-width: 95%;
+  padding: var(--scale-xl) var(--scale-xxl);
+}
+.main__title {
+  margin: auto var(--scale-xl);
+  max-width: 90%;
+  padding: var(--scale-xl) var(--scale-xxl) var(--scale-md);
+  color: var(--primary-color);
+}
+.main__subtitle {
+  max-width: 70%;
+  margin: auto var(--scale-xxl);
+  padding: var(--scale-sm) var(--scale-xxl);
+}
+.main__btns {
+  width: 90%;
+  margin: var(--scale-lg) auto;
+}
+.main__btns .btn {
+  font-size: var(--scale-md);
+  margin: 0 var(--scale-md);
+  padding: var(--scale-md);
+}
+.main__btns .btn:hover {
+  text-decoration: none;
+}
+.footer-container {
+  margin-top: var(--scale-xxl);
+  padding-top: var(--scale-xxl);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer__links {
+  display: flex;
+  font-size: var(--scale-lg);
+}
+
+/* Homepage Breakpoints */
+@media screen and (max-width: 1080px) {
+  .main-content {
+    margin: auto;
+    width: 90%;
+  }
+  .main-content .main-container {
+    padding: var(--scale-xl) 0;
+    width: 95%;
+  }
+  .main__title {
+    width: 100%;
+    margin: auto;
+    padding: var(--scale-lg);
+  }
+  .main__subtitle {
+    min-width: 100%;
+    margin: var(--scale-lg) auto;
+    padding: var(--scale-sm) 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-size: var(--scale-md);
+    box-sizing: border-box;
+  }
+  .main-content {
+    margin: auto;
+    width: 95%;
+  }
+  .main-content .main-container {
+    padding: var(--scale-xl) 0;
+    width: 100%;
+  }
+  .main__title {
+    width: 100%;
+    margin: auto;
+    padding: var(--scale-sm) 0;
+  }
+  .main__title h1 {
+    width: 100%;
+    font-size: var(--scale-lg);
+    line-height: normal;
+  }
+  .main__subtitle {
+    min-width: 100%;
+    margin: var(--scale-lg) auto;
+    padding: var(--scale-sm) 0;
+  }
+  .main__subtitle p {
+    font-size: var(--scale-md);
+    text-align: center;
+    padding: 0 var(--scale-sm);
+  }
+  .main__btns {
+    display: flex;
+    align-items: center;
+    margin: var(--scale-xl) auto;
+    justify-content: center;
+  }
+  .main__btns .btn {
+    font-size: 0.8rem;
+    padding: var(--scale-md);
+  }
+}

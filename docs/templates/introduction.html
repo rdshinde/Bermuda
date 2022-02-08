@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fde0352739.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/introduction.css" />
+    <title>Bermuda</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="main-content">
+        <header class="header-container">
+          <nav class="nav">
+            <div class="nav__logo">
+              <h2>
+                <a href="../index.html">Bermuda</a
+                ><sub class="text-4">&nbsp;v1.0</sub>
+              </h2>
+            </div>
+            <ul class="nav__links">
+              <li><a class="btn btn-link" href="">Home</a></li>
+              <li><a class="btn btn-link" href="">Docs</a></li>
+              <li><a class="btn btn-link" href="">Contribute</a></li>
+            </ul>
+            <!-- <div class="nav__menu-btn hide">
+              <i class="fas fa-bars"></i>
+            </div> -->
+          </nav>
+        </header>
+        <main class="main-container">
+          <aside class="aside-container">
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-3 bold-xl">Get Started</h4>
+              </div>
+              <li>
+                <a href="./introduction.html" class="active"> Introduction </a>
+              </li>
+              <li><a href="./colors.html"> Colors </a></li>
+              <li><a href=""> Spacing </a></li>
+              <li><a href=""> Typography </a></li>
+              <li><a href=""> Overview </a></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-4 bold-xl">Components</h4>
+              </div>
+              <li>
+                <a href="./avatar.html"> Avatar </a>
+              </li>
+              <li><a href=""> Alert </a></li>
+              <li><a href=""> Badge </a></li>
+              <li><a href=""> Button </a></li>
+              <li><a href=""> Card </a></li>
+              <li><a href=""> Image </a></li>
+              <li><a href=""> Input </a></li>
+              <li><a href=""> List </a></li>
+              <li><a href=""> Navigation </a></li>
+            </ul>
+          </aside>
+          <div class="main__content">
+            <div class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Introduction to Bermuda
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda CSS is free to use CSS library which comes with bunch
+                  of pre-defined CSS classes. Bermuda enables you to write a
+                  code which is easy, fast as well as scalable. <br /><br />
+                  Bermuda also provides you the most used UI components, which
+                  makes the process easy for building responsive UIs.
+                </p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="main__content-section">
+              <h3 class="content__heading bold-xl text-start">
+                How to use Bermuda?
+              </h3>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  You can use Bermuda in two ways for your project. You can
+                  either download all files on your local machine or you can
+                  embed the CDN link in your project's head tag.
+                </p>
+                <br />
+                <p class="text-4 bold-md">
+                  For dowloading the files on your local machine
+                  <a
+                    class="active"
+                    target="_blank"
+                    href="https://github.com/rdshinde/Bermuda"
+                    >click here.</a
+                  >
+                  If you want to use the CDN please copy the CDN link which is
+                  given below and paste it into your document's head tag.
+                </p>
+                <br />
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                          &lt;link rel="stylesheet" href="https://bermuda-css.netlify.app/style.css"&gt;
+                      </code>
+                  </pre>
+              </div>
+              <p class="text-4 bold-md">
+                That's it. Now you are ready to rock with Bermuda CSS.
+              </p>
+            </div>
+            <div class="divider"></div>
+            <div class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                How to customize and scale Bermuda?
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda is designed in such a way that you can always scale
+                  existing code of Bermuda to a new level. For customizing
+                  Bermuda you can eithe download and then customize existing
+                  class names or if you are using a CDN link then you can simply
+                  override the existing class CSS.
+                </p>
+                <br />
+                <p class="text-4 bold-md">For example:</p>
+              </div>
+              <div class="component__display">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-primary-customized">
+                  Customized Primary Button
+                </button>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                        &lt;button class="btn btn-primary">Primary Button&lt;/button&gt;
+                        &lt;button class="btn btn-primary-customized"&gt;
+                          Customized Primary Button
+                        &lt;/button&gt;
+                        &lt;style&gt;
+                            .btn-primary-customized{
+                                background-color:#f18f01;
+                                color: white;
+                                padding: 8px 10px;
+                                border-radius: 20px;
+                            }
+
+                        &lt;/style&gt;
+                      </code>
+                  </pre>
+              </div>
+            </div>
+            <div class="foot__nav">
+              <div class="foot__nav-last">
+                <a href="../index.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Home
+                </a>
+              </div>
+              <div class="foot__nav-next">
+                <a href="./colors.html" class="btn btn-link">
+                  Colors &nbsp;
+                  <i class="fas fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-container">
+          <ul class="footer__links">
+            <li>
+              <a class="btn" href=""><i class="fab fa-linkedin"></i> </a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

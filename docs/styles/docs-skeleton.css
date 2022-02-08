@@ -1,0 +1,90 @@
+@import url("../../style.css");
+@import url("../styles/homepage.css");
+
+body,
+body * {
+  box-sizing: border-box;
+}
+/* Actual Skeleton Styling */
+.main-container {
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 0.2fr 0.8fr;
+  margin: auto;
+  min-height: 100%;
+  padding: var(--scale-md);
+}
+.aside-container {
+  grid-area: sidebar;
+  min-width: 15rem;
+}
+.main__content {
+  text-align: start;
+  grid-area: content;
+  width: 52.5rem;
+}
+.main__content-section {
+  padding: var(--scale-sm) var(--scale-lg);
+}
+
+/* Customized list styling */
+.list {
+  text-align: start;
+  background-color: inherit;
+}
+.list__title {
+  word-spacing: normal;
+  border: none;
+}
+.list li {
+  font-size: var(--scale-md);
+}
+.list li a:hover {
+  text-decoration: none;
+}
+
+/* Content Components' styling */
+.content__heading {
+  color: var(--default-color);
+  font-size: var(--scale-lg);
+  padding: var(--scale-md) 0;
+}
+.content {
+  margin: var(--scale-md) 0;
+}
+/* Display Component Styling */
+.component__display {
+  align-items: center;
+  border-radius: var(--scale-sm);
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: var(--scale-md) auto;
+  min-height: 5rem;
+  padding: var(--scale-sm);
+}
+
+/* Footer Styling */
+.foot__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--scale-md);
+}
+
+/* Docs pages breakpoints */
+@media screen and (max-width: 576px) {
+  .aside-container {
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+    padding: var(--scale-sm);
+  }
+  .main__content {
+    grid-area: content;
+    width: 29rem;
+  }
+}
