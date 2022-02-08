@@ -63,6 +63,7 @@ body * {
   margin: var(--scale-md) auto;
   min-height: 5rem;
   padding: var(--scale-sm);
+  row-gap: var(--scale-sm);
 }
 
 /* Footer Styling */

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fde0352739.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/docs-spacing.css" />
+    <title>Bermuda</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="main-content">
+        <header class="header-container">
+          <nav class="nav">
+            <div class="nav__logo">
+              <h2>
+                <a href="../index.html">Bermuda</a
+                ><sub class="text-4">&nbsp;v1.0</sub>
+              </h2>
+            </div>
+            <ul class="nav__links">
+              <li><a class="btn btn-link" href="">Home</a></li>
+              <li><a class="btn btn-link" href="">Docs</a></li>
+              <li><a class="btn btn-link" href="">Contribute</a></li>
+            </ul>
+            <!-- <div class="nav__menu-btn hide">
+              <i class="fas fa-bars"></i>
+            </div> -->
+          </nav>
+        </header>
+        <main class="main-container">
+          <aside class="aside-container">
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-3 bold-xl">Get Started</h4>
+              </div>
+              <li>
+                <a href="./introduction.html"> Introduction </a>
+              </li>
+              <li><a href="./colors.html"> Colors </a></li>
+              <li><a class="active" href=""> Spacing </a></li>
+              <li><a href=""> Typography </a></li>
+              <li><a href=""> Overview </a></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-4 bold-xl">Components</h4>
+              </div>
+              <li>
+                <a href="./avatar.html"> Avatar </a>
+              </li>
+              <li><a href=""> Alert </a></li>
+              <li><a href=""> Badge </a></li>
+              <li><a href=""> Button </a></li>
+              <li><a href=""> Card </a></li>
+              <li><a href=""> Image </a></li>
+              <li><a href=""> Input </a></li>
+              <li><a href=""> List </a></li>
+              <li><a href=""> Navigation </a></li>
+            </ul>
+          </aside>
+          <div class="main__content">
+            <div class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Spacing In Bermuda
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Spacing is very crucial in any UI. We always want to keep our
+                  spacing consistent and clean. We also want to avoid
+                  unnecessary spacing.
+                  <br /><br />
+                  Bermuda gives the three options. We can use
+                  <span class="text-highlight">margin</span>,
+                  <span class="text-highlight">padding</span> or
+                  <span class="text-highlight">gapping</span> with Bermuda.
+                  <br />
+                </p>
+              </div>
+              <div class="component__display">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Classname</th>
+                      <th>Spacing Value</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>sm</td>
+                    <td>0.5rem</td>
+                  </tr>
+                  <tr>
+                    <td>md</td>
+                    <td>1rem</td>
+                  </tr>
+                  <tr>
+                    <td>lg</td>
+                    <td>2rem</td>
+                  </tr>
+                  <tr>
+                    <td>xl</td>
+                    <td>2.5rem</td>
+                  </tr>
+                  <tr>
+                    <td>xxl</td>
+                    <td>4rem</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Now, you can use these spacing options in combination with
+                  margin, padding or gap in order to achieve different spacing
+                  options.
+                  <br /><br />
+                  For example:
+                </p>
+              </div>
+              <div class="component__display">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Margin Classes</th>
+                      <th>Margin Value</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>m-sm</td>
+                    <td>margin: 0.5rem;</td>
+                  </tr>
+                  <tr>
+                    <td>m-y-sm</td>
+                    <td>
+                      margin-top: 0.5rem;<br /><br />
+                      margin-bottom: 0.5rem;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>m-x-sm</td>
+                    <td>
+                      margin-left: 0.5rem;<br /><br />
+                      margin-right: 0.5rem
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>m-t-sm</td>
+                    <td>margin-top: 0.5rem;</td>
+                  </tr>
+                  <tr>
+                    <td>m-b-sm</td>
+                    <td>margin-bottom: 0.5rem;</td>
+                  </tr>
+                </table>
+              </div>
+              <p class="content text-4 bold-md text-danger">
+                Note: The above table shows an example for only margin with
+                value of 0.5rem that is 'sm' class. But you can always use other
+                breakpoints also like 'md' , 'lg', 'xl' and 'xxl'.
+              </p>
+              <p class="content text-4 bold-md">
+                That was for margin. But you can also use padding and gapping
+                just like margin.
+                <br />
+                Following table shows the padding and gapping classes.
+              </p>
+              <div class="component__display">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Class Name</th>
+                      <th>CSS Property</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>
+                      p-(spacing value) <br /><br />
+                      <span class="text-warning">ex. p-sm</span>
+                    </td>
+                    <td>
+                      padding <br /><br />
+                      <span class="text-warning">padding: 0.5rem;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>p-y-(spacing value)</td>
+                    <td>
+                      padding-top & <br /><br />
+                      padding-bottom
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>p-x-(spacing value)</td>
+                    <td>
+                      padding-left & <br /><br />
+                      padding-right
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>p-t-(spacing value)</td>
+                    <td>padding-top</td>
+                  </tr>
+                  <tr>
+                    <td>m-b-(spacing value)</td>
+                    <td>padding-bottom</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      gap-(spacing value) <br /><br />
+                      <span class="text-warning">ex. gap-sm</span>
+                    </td>
+                    <td>
+                      gap <br /><br />
+                      <span class="text-warning">gap: 0.5rem;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>gap-row-(spacing value)</td>
+                    <td>row-gap</td>
+                  </tr>
+                  <tr>
+                    <td>gap-col-(spacing value)</td>
+                    <td>column-gap</td>
+                  </tr>
+                </table>
+              </div>
+              <p class="content text-4 bold-md">
+                It's easy, isn't it?
+                <br />
+                Now, you are ready to use Bermuda spacing classes to make your
+                UI's spacing consistent throughout your design.
+              </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="foot__nav">
+              <div class="foot__nav-last">
+                <a href="./colors.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Colors
+                </a>
+              </div>
+              <div class="foot__nav-next">
+                <a href="./typography.html" class="btn btn-link">
+                  Typography &nbsp;
+                  <i class="fas fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-container">
+          <ul class="footer__links">
+            <li>
+              <a class="btn" href=""><i class="fab fa-linkedin"></i> </a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

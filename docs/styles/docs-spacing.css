@@ -1,0 +1,26 @@
+@import url("../styles/docs-skeleton.css");
+
+table {
+  width: 100%;
+  max-width: 60rem;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: var(--scale-md);
+}
+
+tr:nth-of-type(odd) {
+  background: var(--secondary-color);
+}
+
+th {
+  background: var(--primary-color);
+  color: var(--off-white);
+  font-weight: 600;
+}
+
+td,
+th {
+  padding: var(--scale-md);
+  border: 1px solid var(--secondary-hover);
+  text-align: left;
+}
