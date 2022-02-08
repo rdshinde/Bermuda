@@ -82,6 +82,13 @@ p {
   font-weight: 100;
   word-spacing: 0.15rem;
 }
+.text-5 {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  line-height: normal;
+  font-weight: normal;
+  word-spacing: normal;
+}
 
 /*********
 Classes for font-weight  
