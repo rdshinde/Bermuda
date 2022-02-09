@@ -6,13 +6,21 @@ body * {
   box-sizing: border-box;
 }
 /* Actual Skeleton Styling */
+.whole-content {
+  position: relative;
+  height: max-content;
+  margin: auto;
+  min-height: 100vh;
+  width: 80vw;
+  text-align: center;
+}
 .main-container {
+  width: 95%;
   display: grid;
   grid-template-areas: "sidebar content";
   grid-template-columns: 0.2fr 0.8fr;
   margin: auto;
-  min-height: 100%;
-  padding: var(--scale-md);
+  padding: var(--scale-lg) 0;
 }
 .aside-container {
   grid-area: sidebar;
@@ -21,7 +29,7 @@ body * {
 .main__content {
   text-align: start;
   grid-area: content;
-  width: 52.5rem;
+  width: 100%;
 }
 .main__content-section {
   padding: var(--scale-sm) var(--scale-lg);
@@ -67,7 +75,18 @@ body * {
 }
 
 /* Footer Styling */
+.footer-container {
+  margin-top: var(--scale-xxl);
+  padding-top: var(--scale-xxl);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .foot__nav {
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -75,17 +94,69 @@ body * {
 }
 
 /* Docs pages breakpoints */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1024px) and (max-width: 1556px) {
+  .whole-content {
+    width: 95vw;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
   .aside-container {
     display: none;
+    visibility: hidden;
+  }
+  .whole-content {
+    width: 100vw;
+    margin: 0;
   }
   .main-container {
     grid-template-columns: 1fr;
     grid-template-areas: "content";
     padding: var(--scale-sm);
+    width: 100vw;
+    margin: auto;
   }
   .main__content {
     grid-area: content;
-    width: 29rem;
+    max-width: 95%;
+    margin: auto;
+    /* margin-right: var(--scale-md); */
+  }
+  .main-container .main__content-section {
+    padding: 0;
+    width: 95vw;
+  }
+  .foot__nav {
+    padding: var(--scale-md) 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .aside-container {
+    display: none;
+    visibility: hidden;
+  }
+  .whole-content {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+    padding: var(--scale-sm);
+    width: 95vw;
+    margin: auto;
+  }
+  .main__content {
+    grid-area: content;
+    width: 90vw;
+    margin: auto;
+    margin-right: var(--scale-md);
+  }
+  .main-container .main__content-section {
+    padding: 0;
+    width: 100%;
+  }
+  .foot__nav {
+    padding: var(--scale-md) 0;
   }
 }

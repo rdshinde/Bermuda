@@ -1,5 +1,5 @@
 @import url("../../style.css");
-
+@import url("./docs-skeleton.css");
 
 body {
   font-size: 100%;
@@ -10,51 +10,34 @@ body {
   text-decoration: none;
 }
 
-.main-content {
-  position: relative;
-  height: max-content;
-  margin: auto;
-  min-height: 100vh;
-  width: 80%;
-  text-align: center;
-}
-.main-content .main-container {
-  margin: auto;
+.hero-container {
+  margin: var(--scale-xxl) auto;
   max-width: 95%;
-  padding: var(--scale-xl) var(--scale-xxl);
+  height: 75vh;
+  padding: var(--scale-xxl);
 }
-.main__title {
-  margin: auto var(--scale-xl);
-  max-width: 90%;
-  padding: var(--scale-xl) var(--scale-xxl) var(--scale-md);
+.hero__title {
+  margin: var(--scale-xl) auto;
+  max-width: 80%;
   color: var(--primary-color);
 }
-.main__subtitle {
-  max-width: 70%;
-  margin: auto var(--scale-xxl);
-  padding: var(--scale-sm) var(--scale-xxl);
+.hero__subtitle {
+  margin: var(--scale-xl) auto;
+  max-width: 80%;
 }
-.main__btns {
+.hero__btns {
   width: 90%;
-  margin: var(--scale-lg) auto;
+  margin: var(--scale-xl) auto;
 }
-.main__btns .btn {
+.hero__btns .btn {
   font-size: var(--scale-md);
   margin: 0 var(--scale-md);
   padding: var(--scale-md);
 }
-.main__btns .btn:hover {
+.hero__btns .btn:hover {
   text-decoration: none;
 }
-.footer-container {
-  margin-top: var(--scale-xxl);
-  padding-top: var(--scale-xxl);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+
 .footer__links {
   display: flex;
   font-size: var(--scale-lg);
@@ -62,21 +45,19 @@ body {
 
 /* Homepage Breakpoints */
 @media screen and (max-width: 1080px) {
-  .main-content {
-    margin: auto;
-    width: 90%;
+  .whole-content {
+    width: 100%;
   }
-  .main-content .main-container {
-    padding: var(--scale-xl) 0;
-    width: 95%;
+  .hero-container {
+    padding: var(--scale-xl) auto;
+    margin: var(--scale-xxl) auto;
   }
-  .main__title {
+  .hero__title {
     width: 100%;
     margin: auto;
-    padding: var(--scale-lg);
+    padding: var(--scale-sm);
   }
-  .main__subtitle {
-    min-width: 100%;
+  .hero__subtitle {
     margin: var(--scale-lg) auto;
     padding: var(--scale-sm) 0;
   }
@@ -87,41 +68,38 @@ body {
     font-size: var(--scale-md);
     box-sizing: border-box;
   }
-  .main-content {
+  .whole-content {
+    width: 100%;
     margin: auto;
-    width: 95%;
+    
   }
-  .main-content .main-container {
+  .whole-content .hero-container {
     padding: var(--scale-xl) 0;
-    width: 100%;
   }
-  .main__title {
+  .hero__title {
     width: 100%;
-    margin: auto;
-    padding: var(--scale-sm) 0;
+    margin: var(--scale-sm) auto;
   }
-  .main__title h1 {
-    width: 100%;
+  .hero__title h1 {
     font-size: var(--scale-lg);
     line-height: normal;
   }
-  .main__subtitle {
-    min-width: 100%;
+  .hero__subtitle {
     margin: var(--scale-lg) auto;
-    padding: var(--scale-sm) 0;
+    width: 100%;
   }
-  .main__subtitle p {
+  .hero__subtitle p {
     font-size: var(--scale-md);
-    text-align: center;
+    /* text-align: center; */
     padding: 0 var(--scale-sm);
   }
-  .main__btns {
+  .hero__btns {
     display: flex;
     align-items: center;
     margin: var(--scale-xl) auto;
     justify-content: center;
   }
-  .main__btns .btn {
+  .hero__btns .btn {
     font-size: 0.8rem;
     padding: var(--scale-md);
   }
