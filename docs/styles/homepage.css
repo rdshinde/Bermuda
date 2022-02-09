@@ -38,10 +38,7 @@ body {
   text-decoration: none;
 }
 
-.footer__links {
-  display: flex;
-  font-size: var(--scale-lg);
-}
+
 
 /* Homepage Breakpoints */
 @media screen and (max-width: 1080px) {
