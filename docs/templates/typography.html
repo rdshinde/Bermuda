@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fde0352739.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/colors.css" />
+    <title>Bermuda</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="main-content">
+        <header class="header-container">
+          <nav class="nav">
+            <div class="nav__logo">
+              <h2>
+                <a href="../index.html">Bermuda</a
+                ><sub class="text-4">&nbsp;v1.0</sub>
+              </h2>
+            </div>
+            <ul class="nav__links">
+              <li><a class="btn btn-link" href="">Home</a></li>
+              <li><a class="btn btn-link" href="">Docs</a></li>
+              <li><a class="btn btn-link" href="">Contribute</a></li>
+            </ul>
+            <!-- <div class="nav__menu-btn hide">
+              <i class="fas fa-bars"></i>
+            </div> -->
+          </nav>
+        </header>
+        <main class="main-container">
+          <aside class="aside-container">
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-3 bold-xl">Get Started</h4>
+              </div>
+              <li>
+                <a href="./introduction.html"> Introduction </a>
+              </li>
+              <li><a href="./colors.html"> Colors </a></li>
+              <li><a href="./spacing.html"> Spacing </a></li>
+              <li>
+                <a class="active" href="./typography.html"> Typography </a>
+              </li>
+              <li><a href="./overview.html"> Overview </a></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-4 bold-xl">Components</h4>
+              </div>
+              <li>
+                <a href="./avatar.html"> Avatar </a>
+              </li>
+              <li><a href=""> Alert </a></li>
+              <li><a href=""> Badge </a></li>
+              <li><a href=""> Button </a></li>
+              <li><a href=""> Card </a></li>
+              <li><a href=""> Image </a></li>
+              <li><a href=""> Input </a></li>
+              <li><a href=""> List </a></li>
+              <li><a href=""> Navigation </a></li>
+            </ul>
+          </aside>
+          <div class="main__content">
+            <div class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Typography In Bermuda
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda uses two fonts.
+                  <span class="text-highlight">Playfair Display</span> is used
+                  for headings and <span class="text-highlight">Inter</span> is
+                  used for regular text. Here is an example of headings.
+                </p>
+              </div>
+              <div class="component__display">
+                <div class="headings__container">
+                  <h1>Heading h1</h1>
+                  <h2>Heading h2</h2>
+                  <h3>Heading h3</h3>
+                  <h4>Heading h4</h4>
+                  <h5>Heading h5</h5>
+                  <h6>Heading h6</h6>
+                </div>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                        &lt;h1>Heading h1&lt;/h1&gt;<br>
+                        &lt;h2&gt;Heading h2&lt;/h2&gt;<br>
+                        &lt;h3&gt;Heading h3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Heading h4&lt;/h4&gt;<br>
+                        &lt;h5&gt;Heading h5&lt;/h5&gt;<br>
+                        &lt;h6&gt;Heading h6&lt;/h6&gt;<br>
+                      </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Apart from the headings Bermuda also provides some special
+                  classes for text as well. Following formats of text can be
+                  used easily using these pre-defined text classes.
+                </p>
+              </div>
+
+              <div class="component__display">
+                <div class="text-examples__container">
+                  <p class="text-1">
+                    I am <span class="text-primary">text-1</span> class.
+                  </p>
+                  <p class="text-2">
+                    I am <span class="text-primary">text-2</span> class.
+                  </p>
+                  <p class="text-3">
+                    I am <span class="text-primary">text-3</span> class.
+                  </p>
+                  <p class="text-4">
+                    I am <span class="text-primary">text-4</span> class.
+                  </p>
+                  <p class="text-5">
+                    I am <span class="text-primary">text-5</span> class.
+                  </p>
+                </div>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                        &lt;p class="text-1"&gt;
+                            I am text-1 class.
+                          &lt;/p&gt;
+                          &lt;p class="text-2"&gt;
+                            I am text-2 class.
+                          &lt;/p&gt;
+                          &lt;p class="text-3"&gt;
+                            I am text-3 class.
+                          &lt;/p&gt;
+                          &lt;p class="text-4"&gt;
+                            I am text-4 class.
+                          &lt;/p&gt;
+                          &lt;p class="text-5"&gt;
+                            I am text-5 class.
+                          &lt;/p&gt;
+                      </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+              <p class="text-4 bold-md content">
+                For bold text also Bermuda provides pre-defined classes. Here is
+                the table showing classes for font-weight.
+              </p>
+              <div class="component__display">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Classname</th>
+                      <th>Font Weight</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>bold-sm</td>
+                    <td>font-weight: 300;</td>
+                  </tr>
+                  <tr>
+                    <td>bold-md</td>
+                    <td>font-weight: 400;</td>
+                  </tr>
+                  <tr>
+                    <td>bold-lg</td>
+                    <td>font-weight: 600;</td>
+                  </tr>
+                  <tr>
+                    <td>bold-xl</td>
+                    <td>
+                      font-weight: 700; <br /><br />
+                      letter-spacing: 0.01rem;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>bold-xxl</td>
+                    <td>
+                      font-weight: 900; <br /><br />
+                      letter-spacing: 0.05rem;
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p class="content text-4 bold-md">
+                That's it for typography. Combination of these typography
+                classes can create beautiful texts.
+              </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="foot__nav">
+              <div class="foot__nav-last">
+                <a href="./spacing.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Spacing
+                </a>
+              </div>
+              <div class="foot__nav-next">
+                <a href="./overview.html" class="btn btn-link">
+                  Overview &nbsp;
+                  <i class="fas fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-container">
+          <ul class="footer__links">
+            <li>
+              <a class="btn" href=""><i class="fab fa-linkedin"></i> </a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
