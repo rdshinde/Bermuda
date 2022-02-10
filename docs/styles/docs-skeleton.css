@@ -5,6 +5,7 @@ body,
 body * {
   box-sizing: border-box;
 }
+
 /* Actual Skeleton Styling */
 .whole-content {
   position: relative;

@@ -4,7 +4,8 @@
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  outline: none;
+  outline: 1px solid transparent;
+  outline-offset: inherit;
   padding: var(--scale-sm) var(--scale-md);
   text-transform: uppercase;
 }
@@ -131,7 +132,16 @@
   justify-content: space-around;
 }
 .btn__icon {
-  height: auto;
-  max-width: 50%;
+  height: var(--scale-md);
+  max-width: var(--scale-xxl);
+  object-fit: cover;
   padding: 0 var(--scale-sm) 0 0;
+}
+.btn-floating {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: var(--scale-xl);
+  justify-content: center;
+  width: auto;
 }
