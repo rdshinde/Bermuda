@@ -43,8 +43,8 @@
               </li>
             </ul>
             <!-- <div class="nav__menu-btn hide">
-              <i class="fas fa-bars"></i>
-            </div> -->
+                      <i class="fas fa-bars"></i>
+                    </div> -->
           </nav>
         </header>
         <main class="main-container">
@@ -54,7 +54,7 @@
                 <h4 class="text-3 bold-xl">Get Started</h4>
               </div>
               <li>
-                <a href="./introduction.html" class="active"> Introduction </a>
+                <a href="./introduction.html" > Introduction </a>
               </li>
               <li><a href="./colors.html"> Colors </a></li>
               <li><a href="./spacing.html"> Spacing </a></li>
@@ -73,114 +73,114 @@
               <li><a href="./badge.html"> Badge </a></li>
               <li><a href="./button.html"> Button </a></li>
               <li><a href="./card.html"> Card </a></li>
-              <li><a href="./image.html"> Image </a></li>
+              <li><a class="active" href="./image.html"> Image </a></li>
               <li><a href="./input.html"> Input </a></li>
               <li><a href="./list.html"> List </a></li>
               <li><a href="./navigation.html"> Navigation </a></li>
             </ul>
           </aside>
           <div class="main__content">
-            <div class="main__content-section">
+            <section class="main__content-section">
               <h2 class="content__heading bold-xl text-start">
-                Introduction to Bermuda
+                Images in Bermuda
               </h2>
               <div class="content">
                 <p class="text-4 bold-md">
-                  Bermuda CSS is free to use CSS library which comes with bunch
-                  of pre-defined CSS classes. Bermuda enables you to write a
-                  code which is easy, fast as well as scalable. <br /><br />
-                  Bermuda also provides you the most used UI components, which
-                  makes the process easy for building responsive UIs.
+                  Nowadays, there hard to find a webpage which has no image on
+                  it at all. So, image is a fundamental component of webpage.
+                  But it is very hard to manage width and height of image while
+                  building responsive UI.<br />
+                  That's why, Bermuda provides you the images of different sizes
+                  as well as responsive images for different sized devices.
                 </p>
               </div>
-            </div>
-            <div class="divider"></div>
-            <div class="main__content-section">
-              <h3 class="content__heading bold-xl text-start">
-                How to use Bermuda?
-              </h3>
-              <div class="content">
-                <p class="text-4 bold-md">
-                  You can use Bermuda in two ways for your project. You can
-                  either download all files on your local machine or you can
-                  embed the CDN link in your project's head tag.
-                </p>
-                <br />
-                <p class="text-4 bold-md">
-                  For dowloading the files on your local machine
-                  <a
-                    class="active"
-                    target="_blank"
-                    href="https://github.com/rdshinde/Bermuda"
-                    >click here.</a
-                  >
-                  If you want to use the CDN please copy the CDN link which is
-                  given below and paste it into your document's head tag.
-                </p>
-                <br />
-              </div>
-              <div class="code__snippet border-rounded-md">
-                <pre>
-                      <code class="html border-rounded-sm shadow-lg">
-                          &lt;link rel="stylesheet" href="https://bermuda-css.netlify.app/style.css"&gt;
-                      </code>
-                  </pre>
-              </div>
-              <p class="text-4 bold-md">
-                That's it. Now you are ready to rock with Bermuda CSS.
-              </p>
-            </div>
-            <div class="divider"></div>
-            <div class="main__content-section">
+              <div class="divider"></div>
+            </section>
+
+            <section class="main__content-section">
               <h2 class="content__heading bold-xl text-start">
-                How to customize and scale Bermuda?
+                Different Sized Images.
               </h2>
               <div class="content">
                 <p class="text-4 bold-md">
-                  Bermuda is designed in such a way that you can always scale
-                  existing code of Bermuda to a new level. For customizing
-                  Bermuda you can eithe download and then customize existing
-                  class names or if you are using a CDN link then you can simply
-                  override the existing class CSS.
+                  Bermuda provides three different sized images. With the
+                  classname <span class="text-highlight">img-sm</span> we get
+                  the image with size of 10rem X 10rem, using
+                  <span class="text-highlight">img-md</span> we get the image
+                  with size of 15rem X 15rem and with
+                  <span class="text-highlight">img-lg</span> classname we get
+                  the image of size 20rem X 20rem.
                 </p>
-                <br />
-                <p class="text-4 bold-md">For example:</p>
               </div>
               <div class="component__display">
-                <button class="btn btn-primary">Primary Button</button>
-                <button class="btn btn-primary-customized">
-                  Customized Primary Button
-                </button>
+                <img src="../../assets/avatar.png" class="img-sm" alt="" />
+                <img src="../../assets/avatar.png" class="img-md" alt="" />
+                <img src="../../assets/avatar.png" class="img-lg" alt="" />
+                <img
+                  src="../../assets/avatar.png"
+                  class="img-md border-rounded-full"
+                  alt=""
+                />
               </div>
               <div class="code__snippet border-rounded-md">
                 <pre>
-                      <code class="html border-rounded-sm shadow-lg">
-                        &lt;button class="btn btn-primary">Primary Button&lt;/button&gt;
-                        &lt;button class="btn btn-primary-customized"&gt;
-                          Customized Primary Button
-                        &lt;/button&gt;
-                        &lt;style&gt;
-                            .btn-primary-customized{
-                                background-color:#f18f01;
-                                color: white;
-                                padding: 8px 10px;
-                                border-radius: 20px;
-                            }
+                    <code class="html border-rounded-sm shadow-lg">
+                      &lt;img src="./assets/avatar.png" class="img-sm" alt="small-image"&gt;
+                      
+                      &lt;img src="./assets/avatar.png" class="img-md" alt="medium-image"&gt;
+                      
+                      &lt;img src="./assets/avatar.png" class="img-lg" alt="large-image"&gt;
 
-                        &lt;/style&gt;
-                      </code>
+                      &lt;img src="./assets/avatar.png" class="img-md  border-rounded-full" alt="medium-image-rounded"&gt;
+                    </code>
                   </pre>
               </div>
-            </div>
+              <div class="content text-4 bold-md text-danger">
+                Note: For rounded images you can use the utility classes of
+                border-radius. Here for demo I have used the utility class
+                <span class="text-highlight">border-rounded-full</span>
+              </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Responsive Image
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda also provides the class for responsive image. For
+                  making your image responsive use the classname
+                  <span class="text-highlight"> img-responsive </span>. <br />
+                  <span class="text-danger"
+                    >Note : To see the responsiveness of the following image
+                    resize your window.
+                  </span>
+                </p>
+              </div>
+              <div class="component__display">
+                <img
+                  src="../../assets/avatar.png"
+                  class="img-responsive"
+                  alt="responsive-image"
+                />
+              </div>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  So, these are the pre-defined classes for images. You can
+                  absolutely change them as per your need.
+                </p>
+              </div>
+              <div class="divider"></div>
+            </section>
             <div class="foot__nav">
               <div class="foot__nav-last">
-                <a href="../index.html" class="btn btn-link">
-                  <i class="fas fa-backward"></i>&nbsp; Home
+                <a href="./utility.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Avatars
                 </a>
               </div>
               <div class="foot__nav-next">
-                <a href="./colors.html" class="btn btn-link">
-                  Colors &nbsp;
+                <a href="./alert.html" class="btn btn-link">
+                  Badges &nbsp;
                   <i class="fas fa-forward"></i>
                 </a>
               </div>
@@ -202,6 +202,7 @@
         </footer>
       </div>
     </div>
+    <script src="../../components/alerts/alert.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

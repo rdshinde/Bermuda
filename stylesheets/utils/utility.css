@@ -119,3 +119,20 @@ th {
   border: 1px solid var(--secondary-hover);
   text-align: left;
 }
+.img-sm{
+    height: 10rem;
+   aspect-ratio: 1/1;
+}
+.img-md{
+    height: 15rem;
+   aspect-ratio: 1/1;
+}
+.img-lg{
+    height: 20rem;
+   aspect-ratio: 1/1;
+}
+.img-responsive{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
