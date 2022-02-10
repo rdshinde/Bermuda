@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fde0352739.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/introduction.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="whole-content">
+        <header class="header-container">
+          <nav class="nav">
+            <div class="nav__logo">
+              <h2>
+                <a href="../../index.html">Bermuda</a
+                ><sub class="text-4">&nbsp;v1.0</sub>
+              </h2>
+            </div>
+            <ul class="nav__links">
+              <li><a class="btn btn-link" href="../../index.html">Home</a></li>
+              <li>
+                <a class="btn btn-link" href="./introduction.html">Docs</a>
+              </li>
+              <li>
+                <a
+                  class="btn btn-link"
+                  href="https://www.github.com/rdshinde/Bermuda"
+                  >Contribute</a
+                >
+              </li>
+            </ul>
+            <!-- <div class="nav__menu-btn hide">
+                        <i class="fas fa-bars"></i>
+                      </div> -->
+          </nav>
+        </header>
+        <main class="main-container">
+          <aside class="aside-container">
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-3 bold-xl">Get Started</h4>
+              </div>
+              <li>
+                <a href="./introduction.html"> Introduction </a>
+              </li>
+              <li><a href="./colors.html"> Colors </a></li>
+              <li><a href="./spacing.html"> Spacing </a></li>
+              <li><a href="./typography.html"> Typography </a></li>
+              <li><a href="./overview.html"> Overview </a></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="list">
+              <div class="list__title">
+                <h4 class="text-4 bold-xl">Components</h4>
+              </div>
+              <li>
+                <a href="./avatar.html"> Avatar </a>
+              </li>
+              <li><a href="./alerts.html"> Alert </a></li>
+              <li><a href="./badge.html"> Badge </a></li>
+              <li><a href="./button.html"> Button </a></li>
+              <li><a href="./card.html"> Card </a></li>
+              <li><a href="./image.html"> Image </a></li>
+              <li><a class="active" href="./input.html"> Input </a></li>
+              <li><a href="./list.html"> List </a></li>
+              <li><a href="./navigation.html"> Navigation </a></li>
+            </ul>
+          </aside>
+          <div class="main__content">
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Inputs in Bermuda
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Form and form components are very important to any webpage.
+                  Bermuda also provide some predefined classes for input
+                  methods.
+                </p>
+              </div>
+              <div class="divider"></div>
+            </section>
+
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Simple form input.
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Simple form control with pre-defined sizes and spacing.
+                </p>
+              </div>
+              <div class="component__display">
+                <form class="container">
+                  <div class="input-group">
+                    <label for="text-input"> Username </label>
+                    <input type="text" id="text-input" />
+                  </div>
+                  <div
+                    class="input-group"
+                    error-message="Invalid input entered! Please try again."
+                  >
+                    <label for="pwd-input"> Password </label>
+                    <input type="password" id="pwd-input" />
+                  </div>
+                  <div class="input-group">
+                    <button class="btn btn-primary-outline">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                        &lt;!-- Simple Form Control --&gt;
+
+                        &lt;form class="container"&gt;
+
+                            &lt;div class="input-group"&gt;
+                              &lt;label for="text-input"&gt; Username &lt;/label&gt;
+                              &lt;input type="text" id="text-input" /&gt;
+                            &lt;/div&gt;
+
+                            &lt;div
+                              class="input-group"&gt;
+                                &lt;label for="pwd-input"&gt; Password &lt;/label&gt; 
+                                &lt;input type="password" id="pwd-input" /&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="input-group"&gt;
+                                &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
+                            &lt;/div&gt;
+
+                        &lt;/form&gt;
+                      </code>
+                    </pre>
+              </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Form Control With Required Inputs and Messages
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda also provides the way to get required symbol for
+                  required input label. It also provides the classes for error
+                  messages in input as well as success messages in inputs.
+                </p>
+              </div>
+              <div class="component__display">
+                <form class="container">
+                  <div
+                    class="input-group required success"
+                    success-message="All looks good!"
+                  >
+                    <label for="text-input"> Username </label>
+                    <input type="text" id="text-input" required />
+                  </div>
+                  <div
+                    class="input-group required error"
+                    error-message="Invalid input entered! Please try again."
+                  >
+                    <label for="pwd-input"> Password </label>
+                    <input type="password" id="pwd-input" required />
+                  </div>
+                  <div class="input-group">
+                    <button class="btn btn-primary-outline">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                    <code class="html border-rounded-sm shadow-lg">
+                        &lt;!-- Form control with success and error messages --&gt;
+
+                        &lt;form class="container"&gt;
+                            &lt;div
+                              class="input-group required success"
+                              success-message="All looks good!"
+                            &gt;
+                              &lt;label for="text-input"&gt; Username &lt;/label&gt;
+                              &lt;input type="text" id="text-input" required /&gt;
+                            &lt;/div&gt;
+                            &lt;div
+                              class="input-group required error"
+                              error-message="Invalid input entered! Please try again."
+                            &gt;
+                              &lt;label for="pwd-input"&gt; Password &lt;/label&gt;
+                              &lt;input type="password" id="pwd-input" required /&gt;
+                            &lt;/div&gt;
+                            &lt;div class="input-group"&gt;
+                              &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/form&gt;
+                    </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Checkbox and Radio Inputs
+              </h2>
+              <div class="content">
+                <p class="text-4 bold-md">
+                  Bermuda also provides the styles for radio and checkbox
+                  inputs.
+                </p>
+              </div>
+              <div class="component__display">
+                <form>
+                  <div class="input-group">
+                    <label for="radio-1">
+                      <input id="radio-1" name="radio" type="radio" checked />
+                      Checked
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <label for="radio-2">
+                      <input id="radio-2" name="radio" type="radio" unchecked />
+                      Unchecked
+                    </label>
+                  </div>
+                  <div class="input-group disabled">
+                    <label for="radio-3">
+                      <input id="radio-3" name="radio" type="radio" disabled />
+                      Disabled
+                    </label>
+                  </div>
+                </form>
+                <form>
+                  <div class="input-group">
+                    <label for="checkbox-1">
+                      <input
+                        id="checkbox-1"
+                        name="checkbox"
+                        type="checkbox"
+                        checked
+                      />
+                      Checked
+                    </label>
+                  </div>
+                  <div class="input-group">
+                    <label for="checkbox-2">
+                      <input
+                        id="checkbox-2"
+                        name="checkbox"
+                        type="checkbox"
+                        unchecked
+                      />
+                      Unchecked
+                    </label>
+                  </div>
+                  <div class="input-group disabled">
+                    <label for="checkbox-3">
+                      <input
+                        id="checkbox-3"
+                        name="checkbox"
+                        type="checkbox"
+                        disabled
+                      />
+                      Disabled
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                    <code class="html border-rounded-sm shadow-lg">
+                        &lt;!-- Disabled Input --&gt;
+
+                        &lt;div class="input-group disabled"&gt;
+                            &lt;label for="radio-3"&gt; &lt;input id="radio-3" name="radio" type="radio" disabled /&gt; Disabled&lt;/label&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Active Input --&gt;
+
+                        &lt;div class="input-group"&gt;
+                            &lt;label for="checkbox-1"&gt; &lt;input id="checkbox-1" name="checkbox" type="checkbox" checked /&gt; Checked &lt;/label&gt; 
+                        &lt;/div&gt;
+                    </code>
+                  </pre>
+              </div>
+              <div class="content">
+                  <p class="text-4 bold-md">
+                      Now, You are done with all the input type that Bermuda provides. You can always change the styles of them.
+                  </p>
+              </div>
+            </section>
+            <div class="foot__nav">
+              <div class="foot__nav-last">
+                <a href="./image.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Images
+                </a>
+              </div>
+              <div class="foot__nav-next">
+                <a href="./list.html" class="btn btn-link">
+                  Lists &nbsp;
+                  <i class="fas fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer-container">
+          <ul class="footer__links">
+            <li>
+              <a class="btn" href=""><i class="fab fa-linkedin"></i> </a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="../../components/alerts/alert.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
