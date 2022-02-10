@@ -1,6 +1,5 @@
 /* Styling for list component */
 .list {
-  background-color: var(--off-white);
   margin: var(--scale-md);
   max-width: 95%;
   padding: 0 var(--scale-sm) var(--scale-sm);
@@ -47,7 +46,7 @@
   position: relative;
 }
 .list-scroll .list__title {
-  background-color: var(--off-white);
+  background-color: var(--secondary-color);
   position: sticky;
   top: 0;
   z-index: 2;
