@@ -119,10 +119,9 @@ th {
   padding: var(--scale-md);
   border: 1px solid var(--secondary-hover);
   text-align: left;
-
-.hide {
+}
+.hide{
   display: none;
-
 }
 .img-sm{
     height: 10rem;
