@@ -1,0 +1,35 @@
+/* Background Overlay Styling */
+.overlay {
+  background-color: var(--secondary-color);
+  height: 100vh;
+  inset: 0;
+  opacity: 70%;
+  position: fixed;
+  width: 100vw;
+  z-index: 90;
+}
+
+/* Modal Styling */
+.modal {
+  background-color: var(--default-bg-color);
+  left: 50%;
+  margin: auto;
+  padding: var(--scale-md);
+  position: fixed;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  z-index: 100;
+}
+
+.modal__body {
+  font-size: 1rem;
+  margin: 1rem 0;
+  max-height: 15rem;
+  overflow-y: auto;
+}
+.modal__footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
