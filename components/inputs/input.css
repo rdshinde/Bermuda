@@ -42,3 +42,15 @@ input:disabled {
   cursor: not-allowed;
   opacity: 50%;
 }
+/* Styling For Success Inputs */
+.success input {
+  border: 1px solid var(--success-color);
+  box-shadow: 0px 0px 3px 0px var(--success-color);
+  color: var(--success-color);
+}
+.success::after {
+  color: var(--success-color);
+  content: attr(success-message);
+  display: block;
+  position: relative;
+}

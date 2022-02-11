@@ -4,6 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: var(--scale-sm);
+  position: static;
+  top: 0;
   width: 100%;
 }
 .nav a {
@@ -35,12 +37,12 @@
   background-color: var(--dark-color);
 }
 .nav__bg-dark a,
-* {
+.nav__bg-dark * {
   color: var(--off-white);
 }
 
 /* Adding Breakpoints */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .nav {
     align-items: center;
     justify-content: center;
