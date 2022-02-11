@@ -18,6 +18,7 @@
 @import url("./components/lists/list.css");
 @import url("./components/navigation/navbar.css");
 @import url("./components/modal/modal.css");
+@import url("./components/rating/rating.css");
 
 body {
   font-size: 100%;

@@ -1,0 +1,24 @@
+/* Styling for single star rating */
+.rating-simple {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  display: flex;
+  font-size: 0.75rem;
+  height: auto;
+  justify-content: center;
+  padding: 0.25rem 0.35rem;
+  width: auto;
+}
+.rated,
+.rated:hover {
+  color: orange;
+}
+/* Styling For multiple stars rating */
+.rating-stars {
+  align-items: center;
+  display: flex;
+}
+.rating-stars span {
+  color: var(--primary-color);
+}

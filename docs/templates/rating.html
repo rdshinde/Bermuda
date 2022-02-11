@@ -77,13 +77,13 @@
               <li><a href="./input.html"> Input </a></li>
               <li><a href="./list.html"> List </a></li>
               <li>
-                <a class="active" href="./navigation.html"> Navigation </a>
+                <a href="./navigation.html"> Navigation </a>
               </li>
               <li>
                 <a href="./modal.html"> Modal </a>
               </li>
               <li>
-                <a href="./rating.html"> Rating </a>
+                <a class="active" href="./rating.html"> Rating </a>
               </li>
               <li>
                 <a href="./toast.html"> Toast </a>
@@ -93,109 +93,86 @@
           <div class="main__content">
             <section class="main__content-section">
               <h2 class="content__heading bold-xl text-start">
-                Simple Navigation in Bermuda
+                Ratings in Bermuda
               </h2>
               <div class="content">
                 <p class="text-4 bold-md">
-                  Every webpage has a navigation component. Bermuda also
-                  provides the simple navigation component.
+                  Bermuda provides the two types of rating designs which can be
+                  used in e-comm apps.
                 </p>
               </div>
               <div class="divider"></div>
             </section>
-
             <section class="main__content-section">
-              <h2 class="content__heading bold-xl text-start">Simple Navbar</h2>
+              <h2 class="content__heading bold-xl text-start">Simple Rating</h2>
               <div class="content">
                 <p class="text-4 bold-md">
-                  It is a very simple navabr for desktop and mobile screens.
+                  This is a single star rating with filled background.
                 </p>
               </div>
               <div class="component__display bg-secondary">
-                <nav class="nav border-rounded-sm m-xl shadow-lg">
-                  <div class="nav__logo">
-                    <h2><a href=""> Bermuda</a></h2>
-                  </div>
-                  <ul class="nav__links">
-                    <li><a class="btn btn-link" href="">Home</a></li>
-                    <li><a class="btn btn-link" href="">Docs</a></li>
-                    <li>
-                      <a class="btn btn-link btn-disabled" href=""
-                        >Contribute</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="nav__menu-btn hide">
-                    <i class="fas fa-bars"></i>
-                  </div>
-                </nav>
+                <div class="rating-simple border-rounded-lg px-lg">
+                  <i class="fa fa-star rated"></i>
+                  <span class="bold-lg">4.5</span>
+                </div>
+                <div class="rating-simple border-rounded-lg px-lg">
+                  <i class="fa fa-star rated"></i>
+                  <span class="bold-lg">3.7</span>
+                </div>
+                <div class="rating-simple border-rounded-lg px-lg">
+                  <i class="fa fa-star rated"></i>
+                  <span class="bold-lg">5.0</span>
+                </div>
               </div>
+
               <div class="code__snippet border-rounded-md">
                 <pre>
                     <code class="html border-rounded-sm shadow-lg">
-                      &lt;nav class="nav border-rounded-sm shadow-lg"&gt;
-                        &lt;div class="nav__logo"&gt;
-                          &lt;h2&gt;&lt;a href=""&gt; Bermuda&lt;/a&gt;&lt;/h2&gt;
+
+                        &lt;div class="rating-simple border-rounded-lg px-lg"&gt;
+                            &lt;i class="fa fa-star rated"&gt;&lt;/i&gt;
+                            &lt;span class="bold-lg"&gt;4.5&lt;/span&gt;
                         &lt;/div&gt;
-                        &lt;ul class="nav__links"&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link" href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link" href=""&gt;Docs&lt;/a&gt;&lt;/li&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link btn-disabled" href=""&gt;Contribute&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                        &lt;div class="nav__menu-btn hide"&gt;
-                          &lt;i class="fas fa-bars"&gt;&lt;/i&gt;
-                        &lt;/div&gt;
-                      &lt;/nav&gt;
+
                     </code>
                   </pre>
               </div>
               <div class="divider"></div>
             </section>
             <section class="main__content-section">
-              <h2 class="content__heading bold-xl text-start">Dark Navbar</h2>
+              <h2 class="content__heading bold-xl text-start">
+                Rating with Multiple Stars
+              </h2>
               <div class="content">
                 <p class="text-4 bold-md">
-                  Bermuda also provides navbar with dark background just by
-                  simply adding
-                  <span class="text-highlight">nav__bg-dark</span> class to nav
-                  tag.
+                  A couple of times we see a rating with multiple stars. Bermuda
+                  provides that design too.
                 </p>
               </div>
               <div class="component__display bg-secondary">
-                <nav class="nav nav__bg-dark m-xl border-rounded-sm shadow-lg">
-                  <div class="nav__logo">
-                    <h2><a href=""> Bermuda</a></h2>
-                  </div>
-                  <ul class="nav__links">
-                    <li><a class="btn btn-link" href="">Home</a></li>
-                    <li><a class="btn btn-link" href="">Docs</a></li>
-                    <li>
-                      <a class="btn btn-link btn-disabled" href=""
-                        >Contribute</a
-                      >
-                    </li>
-                  </ul>
-                  <div class="nav__menu-btn hide">
-                    <i class="fas fa-bars"></i>
-                  </div>
-                </nav>
+                <div class="rating-stars border-rounded-lg">
+                  <i class="fa fa-star rating__star rated"></i>
+                  <i class="fa fa-star rating__star rated"></i>
+                  <i class="fa fa-star rating__star rated"></i>
+                  <i class="fa fa-star rating__star rated"></i>
+                  <i class="fa fa-star rating__star"></i>
+                  <span class="bold-lg p-l-sm"> 4.5 </span>
+                </div>
               </div>
               <div class="code__snippet border-rounded-md">
                 <pre>
                     <code class="html border-rounded-sm shadow-lg">
-                      &lt;nav class="nav nav__bg-dark"&gt;
-                        &lt;div class="nav__logo"&gt;
-                          &lt;h2&gt;&lt;a href=""&gt; Bermuda&lt;/a&gt;&lt;/h2&gt;
+                        &lt;div class="rating-stars border-rounded-lg"&gt;
+
+                            &lt;i class="fa fa-star rating__star rated"&gt;&lt;/i&gt;
+                            &lt;i class="fa fa-star rating__star rated"&gt;&lt;/i&gt;
+                            &lt;i class="fa fa-star rating__star rated"&gt;&lt;/i&gt;
+                            &lt;i class="fa fa-star rating__star rated"&gt;&lt;/i&gt;
+                            &lt;i class="fa fa-star rating__star"&gt;&lt;/i&gt;
+
+                            &lt;span class="bold-lg p-l-sm"&gt; 4.5 &lt;/span&gt;
+
                         &lt;/div&gt;
-                        &lt;ul class="nav__links"&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link" href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link" href=""&gt;Docs&lt;/a&gt;&lt;/li&gt;
-                          &lt;li&gt;&lt;a class="btn btn-link btn-disabled" href=""&gt;Contribute&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                        &lt;div class="nav__menu-btn hide"&gt;
-                          &lt;i class="fas fa-bars"&gt;&lt;/i&gt;
-                        &lt;/div&gt;
-                      &lt;/nav&gt;
                     </code>
                   </pre>
               </div>
@@ -203,13 +180,13 @@
             </section>
             <div class="foot__nav">
               <div class="foot__nav-last">
-                <a href="./input.html" class="btn btn-link">
-                  <i class="fas fa-backward"></i>&nbsp; Inputs
+                <a href="./modal.html" class="btn btn-link">
+                  <i class="fas fa-backward"></i>&nbsp; Modal
                 </a>
               </div>
               <div class="foot__nav-next">
-                <a href="./input.html" class="btn btn-link">
-                  Navigation &nbsp;
+                <a href="./toast.html" class="btn btn-link">
+                  Toast &nbsp;
                   <i class="fas fa-forward"></i>
                 </a>
               </div>
@@ -231,7 +208,7 @@
         </footer>
       </div>
     </div>
-    <script src="../../components/alerts/alert.js"></script>
+    <script src="../../components/modal/modal.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
