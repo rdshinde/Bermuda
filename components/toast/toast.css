@@ -1,0 +1,17 @@
+.toast {
+  margin: auto;
+  padding: var(--scale-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  max-width: 400px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  position: relative;
+}
+.toast__text,
+.toast__link,
+.toast__dismiss__btn {
+  margin: 0 var(--scale-sm);
+}
