@@ -17,6 +17,7 @@
 @import url("./components/inputs/input.css");
 @import url("./components/lists/list.css");
 @import url("./components/navigation/navbar.css");
+@import url("./components/modal/modal.css");
 
 body {
   font-size: 100%;
