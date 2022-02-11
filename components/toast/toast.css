@@ -4,7 +4,7 @@
   height: auto;
   justify-content: space-between;
   margin: auto;
-  max-width: 400px;
+  max-width: 20rem;
   overflow-x: scroll;
   padding: var(--scale-sm);
 }
