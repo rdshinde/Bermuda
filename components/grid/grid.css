@@ -1,0 +1,45 @@
+/* Grid container styling */
+.grid-container {
+  display: grid;
+  grid-auto-flow: row;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+/* Colums Styling */
+.col-1 {
+  grid-template-columns: repeat(auto-fit, auto);
+}
+.col-2 {
+  grid-template-columns: repeat(auto-fit, minmax(48%, auto));
+}
+.col-3 {
+  grid-template-columns: repeat(auto-fit, minmax(32%, auto));
+}
+.col-4 {
+  grid-template-columns: repeat(auto-fit, minmax(24%, auto));
+}
+
+/* Breakpoints For Columns */
+@media screen and (max-width: 1024px) {
+  .col-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .col-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, auto));
+  }
+  .col-4 {
+    grid-template-columns: repeat(auto-fit, minmax(48%, auto));
+  }
+}
+@media screen and (max-width: 720px) {
+  .col-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+  .col-4 {
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+  }
+}
