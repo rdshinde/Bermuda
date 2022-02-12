@@ -23,11 +23,9 @@
 /* Breakpoints For Columns */
 @media screen and (max-width: 1024px) {
   .col-2 {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100%, auto));
   }
   .col-3 {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(48%, auto));
   }
   .col-4 {
@@ -36,7 +34,6 @@
 }
 @media screen and (max-width: 720px) {
   .col-3 {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100%, auto));
   }
   .col-4 {
