@@ -1,0 +1,19 @@
+/* Different siezed images */
+.img-sm {
+  height: 10rem;
+  aspect-ratio: 1/1;
+}
+.img-md {
+  height: 15rem;
+  aspect-ratio: 1/1;
+}
+.img-lg {
+  height: 20rem;
+  aspect-ratio: 1/1;
+}
+/* Responsive Image */
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

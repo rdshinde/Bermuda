@@ -8,20 +8,22 @@
   --success-color: #4caf50;
   --warning-color: #e6b000;
 
-  --text-hover: hsl(290, 9%, 8%);
-  --default-hover: hsl(229, 100%, 15%);
-  --primary-hover: hsl(229, 100%, 53%);
-  --secondary-hover: hsl(220, 14%, 86%);
-  --danger-hover: hsl(4, 92%, 40%);
-  --success-hover: hsl(122, 39%, 34%);
-  --warning-hover: hsl(46, 100%, 38%);
-  --active-hover: hsl(216, 100%, 35%);
+  --text-hover: #161316;
+  --default-hover: #000e4d;
+  --primary-hover: #0f3bff;
+  --secondary-hover: #d6dae0;
+  --danger-hover: #c41508;
+  --success-hover: #357937;
+  --warning-hover: #c29500;
+  --active-hover: #0047b3;
 
   --off-white: #f6f9fc;
   --active-color: #0065ff;
 
   --dark-color: #221d23;
   --light-color: #f4f4ed;
+
+  --shadow-color: #00000059;
 }
 /* Text Colors' Classes */
 .text-primary {
