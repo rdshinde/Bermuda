@@ -4,9 +4,11 @@
   height: auto;
   justify-content: space-between;
   margin: auto;
-  max-width: 20rem;
+  max-width: 400px;
   overflow-x: scroll;
   padding: var(--scale-sm);
+  position: relative;
+  white-space: nowrap;
 }
 .toast__text,
 .toast__link,

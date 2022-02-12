@@ -5,6 +5,7 @@
 Utility Classes 
 ************/
 
+/* Container class */
 .container {
   width: 100%;
   margin: auto;
@@ -12,6 +13,7 @@ Utility Classes
   position: relative;
 }
 
+/* Classes for background-colors */
 .bg-dark {
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -21,17 +23,36 @@ Utility Classes
   color: var(--dark-color);
 }
 
+/* Class for transition */
 .transition {
   transition: 1s, color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+/* Classes for positioning */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Classes for border-radius */
 .border-rounded-sm {
   border-radius: var(--scale-sm);
 }
@@ -45,6 +66,7 @@ Utility Classes
   border-radius: 50%;
 }
 
+/* Classes for a tags */
 a {
   color: inherit;
   text-decoration: none;
@@ -55,6 +77,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Styling for icons */
 svg,
 i:hover {
   cursor: pointer;
@@ -63,13 +86,89 @@ i:hover {
   z-index: 1;
 }
 
+/* Styling for img */
 img {
   max-width: 100%;
   height: auto;
 }
-.shadow-lg {
-  box-shadow: #00000059 0px 5px 15px;
+/* Styling for shadow */
+.shadow-sm {
+  box-shadow: 0px 0px 3px 0px var(--shadow-color);
 }
+
+.shadow-md {
+  box-shadow: 0px 0px 9px 0px var(--shadow-color);
+}
+.shadow-lg {
+  box-shadow: var(--shadow-color) 0px 5px 15px;
+}
+
+/* Styling for divider */
+.divider {
+  min-width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--secondary-hover);
+}
+.divider-md {
+  margin-bottom: var(--scale-md);
+}
+
+/* Styling for active class */
+.active {
+  font-weight: 700;
+  color: var(--active-color);
+}
+
+/* Texy Utilities */
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.text-start {
+  text-align: start;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.text-highlight {
+  font-weight: 600;
+  background-color: var(--secondary-hover);
+  padding: 0 var(--scale-sm);
+  border-radius: var(--scale-xl);
+}
+
+/* Styling for tables */
+table {
+  width: 100%;
+  max-width: 60rem;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: var(--scale-md);
+}
+
+tr:nth-of-type(odd) {
+  background: var(--secondary-color);
+}
+
+th {
+  background: var(--primary-color);
+  color: var(--off-white);
+  font-weight: 600;
+}
+
+td,
+th {
+  padding: var(--scale-md);
+  border: 1px solid var(--secondary-hover);
+  text-align: left;
+}
+
+/* Styling for lidden container */
 .hide {
   display: none;
 }
+
+

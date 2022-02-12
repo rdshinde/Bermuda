@@ -2,10 +2,10 @@
 .badge {
   align-items: center;
   display: flex;
-  font-size: 0.5rem;
+  font-size: var(--scale-sm);
   height: var(--scale-sm);
   justify-content: center;
-  padding: 0.3rem;
+  padding: var(--scale-sm);
   position: absolute;
   width: var(--scale-sm);
 }

@@ -1,0 +1,20 @@
+@import url("../styles/docs-skeleton.css");
+
+.colors-box__container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--scale-md);
+  width: 95%;
+}
+.color-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: space-between;
+  width: 8rem;
+  padding: var(--scale-sm);
+}
+
