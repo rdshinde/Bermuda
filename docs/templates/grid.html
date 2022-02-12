@@ -101,62 +101,140 @@
               <div class="content">
                 <p class="text-4 bold-md">
                   Grid layout is very useful in responsive design of UI. Bermuda
-                  provides the responsive Simplified Grid layouts.
+                  provides the responsive Simplified Grid layouts. <br />
+                  Bermuda provides grid layout upto four colums. The classnames
+                  are very simple. <br />
+                  For ex. For grid with 3 columns we only need to add to classes
+                  to our container
+                  <span class="text-highlight">grid-container col-3</span> and
+                  that's it our responsive grid layout with three columns is
+                  ready.
                 </p>
               </div>
               <div class="divider"></div>
             </section>
             <section class="main__content-section">
-              <h2 class="content__heading bold-xl text-start">Simple Toast</h2>
+              <h2 class="content__heading bold-xl text-start">
+                Single Column Grid
+              </h2>
               <div class="component__display bg-secondary">
-                <div class="toast border-rounded-sm bg-primary text-offwhite">
-                  <div class="toast__text">This is an important alert.</div>
-                  <div class="toast__link">
-                    <a href="#">Click here</a>
-                  </div>
-                  <div class="toast__dismiss__btn">
-                    <i class="fas fa-times"></i>
-                  </div>
-                </div>
-                <div class="toast border-rounded-sm bg-success text-offwhite">
-                  <div class="toast__text">This is an important alert.</div>
-                  <div class="toast__link">
-                    <a href="#">Click here</a>
-                  </div>
-                  <div class="toast__dismiss__btn">
-                    <i class="fas fa-times"></i>
-                  </div>
-                </div>
-                <div class="toast border-rounded-sm bg-danger text-offwhite">
-                  <div class="toast__text">This is an important alert.</div>
-                  <div class="toast__link">
-                    <a href="#">Click here</a>
-                  </div>
-                  <div class="toast__dismiss__btn">
-                    <i class="fas fa-times"></i>
+                <div class="grid-container col-1">
+                  <div class="p-xl bg-primary text-2 text-offwhite">
+                    Single Column Grid
                   </div>
                 </div>
               </div>
-
               <div class="code__snippet border-rounded-md">
                 <pre>
                     <code class="html border-rounded-sm shadow-lg">
-
-                        &lt;div class="toast border-rounded-sm bg-primary text-offwhite"&gt;
-
-                            &lt;div class="toast__text"&gt;This is an important alert.&lt;/div&gt;
-                            &lt;div class="toast__link"&gt;
-                              &lt;a href="#"&gt;Click here&lt;/a&gt;
-                            &lt;/div&gt;
-                            &lt;div class="toast__dismiss__btn"&gt;
-                              &lt;i class="fas fa-times"&gt;&lt;/i&gt;
-                            &lt;/div&gt;
-
+                     
+                        &lt;div class="grid-container col-1"&gt;
+                          &lt;div class="bg-primary"&gt;Single Column Grid&lt;/div&gt;
                         &lt;/div&gt;
-
+                      
                     </code>
                   </pre>
               </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Two Columns Grid
+              </h2>
+              <div class="component__display bg-secondary">
+                <div class="grid-container col-2">
+                  <div class="p-xl bg-primary text-2 text-offwhite">
+                    Two Columns Grid
+                  </div>
+                  <div class="p-xl bg-default text-2 text-primary">
+                    Two Columns Grid
+                  </div>
+                </div>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                    <code class="html border-rounded-sm shadow-lg">
+                      
+                        &lt;div class="grid-container col-2"&gt;
+                          &lt;div class="bg-primary"&gt;Two Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-default"&gt;Two Columns Grid&lt;/div&gt;
+                        &lt;/div&gt;
+                      
+                    </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Three Columns Grid
+              </h2>
+              <div class="component__display bg-secondary">
+                <div class="grid-container col-3">
+                  <div class="p-xl bg-primary text-3 text-offwhite">
+                    Three Columns Grid
+                  </div>
+                  <div class="p-xl bg-default text-3 text-primary">
+                    Three Columns Grid
+                  </div>
+                  <div class="p-xl bg-primary text-3 text-offwhite">
+                    Three Columns Grid
+                  </div>
+                </div>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                    <code class="html border-rounded-sm shadow-lg">
+                      
+                        &lt;div class="grid-container col-3"&gt;
+                          &lt;div class="bg-primary"&gt;Three Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-default"&gt;Three Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-primary"&gt;Three Columns Grid&lt;/div&gt;
+                        &lt;/div&gt;
+                      
+                    </code>
+                  </pre>
+              </div>
+              <div class="divider"></div>
+            </section>
+            <section class="main__content-section">
+              <h2 class="content__heading bold-xl text-start">
+                Four Columns Grid
+              </h2>
+              <div class="component__display bg-secondary">
+                <div class="grid-container col-4">
+                  <div class="p-xl bg-primary text-4 text-offwhite">
+                    Four Columns Grid
+                  </div>
+                  <div class="p-xl bg-default text-4 text-primary">
+                    Four Columns Grid
+                  </div>
+                  <div class="p-xl bg-primary text-4 text-offwhite">
+                    Four Columns Grid
+                  </div>
+                  <div class="p-xl bg-default text-4 text-primary">
+                    Four Columns Grid
+                  </div>
+                </div>
+              </div>
+              <div class="code__snippet border-rounded-md">
+                <pre>
+                    <code class="html border-rounded-sm shadow-lg">
+                      
+                        &lt;div class="grid-container col-4"&gt;
+                          &lt;div class="bg-primary"&gt;Four Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-default"&gt;Four Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-primary"&gt;Four Columns Grid&lt;/div&gt;
+                          &lt;div class="bg-default"&gt;Four Columns Grid&lt;/div&gt;
+                        &lt;/div&gt;
+                      
+                    </code>
+                  </pre>
+              </div>
+              <p class="content bold-md text-4 text-danger">
+                Note: To check the responsiveness of the grids resize your
+                window.
+              </p>
               <div class="divider"></div>
             </section>
             <div class="foot__nav">
