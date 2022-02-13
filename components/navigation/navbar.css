@@ -4,8 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   padding: var(--scale-sm);
-  position: static;
-  top: 0;
   width: 100%;
 }
 .nav a {
