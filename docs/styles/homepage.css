@@ -2,9 +2,9 @@
 @import url("./docs-skeleton.css");
 
 body {
-  font-size: 100%;
   background-color: var(--defalult-bg-color);
   color: var(--default-text-color);
+  font-size: 100%;
 }
 .btn:hover {
   text-decoration: none;
@@ -13,13 +13,11 @@ body {
 .hero-container {
   margin: var(--scale-xxl) auto;
   max-width: 95%;
-  height: 75vh;
   padding: var(--scale-xxl);
 }
 .hero__title {
   margin: var(--scale-xl) auto;
   max-width: 80%;
-  color: var(--primary-color);
 }
 .hero__subtitle {
   margin: var(--scale-xl) auto;
@@ -38,21 +36,19 @@ body {
   text-decoration: none;
 }
 
-
-
 /* Homepage Breakpoints */
 @media screen and (max-width: 1080px) {
   .whole-content {
     width: 100%;
   }
   .hero-container {
-    padding: var(--scale-xl) auto;
     margin: var(--scale-xxl) auto;
+    padding: var(--scale-xl) auto;
   }
   .hero__title {
-    width: 100%;
     margin: auto;
     padding: var(--scale-sm);
+    width: 100%;
   }
   .hero__subtitle {
     margin: var(--scale-lg) auto;
@@ -68,14 +64,14 @@ body {
   .whole-content {
     width: 100%;
     margin: auto;
-    
   }
-  .whole-content .hero-container {
-    padding: var(--scale-xl) 0;
+  .hero-container {
+    height: auto;
+    padding: var(--scale-sm) auto var(--scale-sm) auto;
+    margin: var(--scale-sm) auto var(--scale-sm) auto;
   }
   .hero__title {
-    width: 100%;
-    margin: var(--scale-sm) auto;
+    margin: var(--scale-md) auto;
   }
   .hero__title h1 {
     font-size: var(--scale-lg);
@@ -87,17 +83,17 @@ body {
   }
   .hero__subtitle p {
     font-size: var(--scale-md);
-    /* text-align: center; */
     padding: 0 var(--scale-sm);
   }
   .hero__btns {
-    display: flex;
-    align-items: center;
     margin: var(--scale-xl) auto;
-    justify-content: center;
   }
   .hero__btns .btn {
     font-size: 0.8rem;
     padding: var(--scale-md);
+  }
+  .footer-container {
+    margin-top: var(--scale-xxl);
+    padding: var(--scale-xxl);
   }
 }

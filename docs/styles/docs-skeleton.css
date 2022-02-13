@@ -6,46 +6,72 @@ body * {
   box-sizing: border-box;
 }
 
-/* Actual Skeleton Styling */
+/************ 
+Actual Skeleton Styling 
+
+************/
+
+/* Whole container styling */
 .whole-content {
-  position: relative;
   height: max-content;
   margin: auto;
   min-height: 100vh;
-  width: 80vw;
+  position: relative;
   text-align: center;
+  width: 80vw;
 }
+/* Main container styling */
 .main-container {
-  width: 95%;
   display: grid;
   grid-template-areas: "sidebar content";
   grid-template-columns: 0.2fr 0.8fr;
   margin: auto;
   padding: var(--scale-lg) 0;
+  position: relative;
+  width: 95%;
+}
+
+/* Header container styling */
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* Aside wrapper and container styling */
+.aside-wrapper {
+  position: fixed;
+  z-index: 9;
 }
 .aside-container {
   grid-area: sidebar;
+  max-height: 90vh;
   min-width: 15rem;
+  overflow: auto;
 }
+
+/* Main docs content styling */
 .main__content {
-  text-align: start;
   grid-area: content;
+  text-align: start;
   width: 100%;
 }
 .main__content-section {
   padding: var(--scale-sm) var(--scale-lg);
 }
-.code__snippet{
+.code__snippet {
   text-align: justify;
+  line-height: calc(var(--scale-md) + var(--scale-sm));
 }
+
 /* Customized list styling */
 .list {
-  text-align: start;
   background-color: inherit;
+  text-align: start;
 }
 .list__title {
-  word-spacing: normal;
   border: none;
+  word-spacing: normal;
 }
 .list li {
   font-size: var(--scale-md);
@@ -93,8 +119,8 @@ body * {
   display: flex;
   height: 100%;
   justify-content: center;
-  margin-top: var(--scale-xxl);
-  padding-top: var(--scale-xxl);
+  margin-top: var(--scale-md);
+  padding-top: var(--scale-md);
   width: 100%;
 }
 
@@ -102,6 +128,8 @@ body * {
   display: flex;
   font-size: var(--scale-lg);
 }
+
+/* Scrollbar Styling without changing browser stles */
 
 /* Docs pages breakpoints */
 @media screen and (min-width: 1024px) and (max-width: 1556px) {
@@ -119,6 +147,9 @@ body * {
     margin: 0;
     width: 100vw;
   }
+  .header-container {
+    position: static;
+  }
   .main-container {
     grid-template-areas: "content";
     grid-template-columns: 1fr;
@@ -130,6 +161,10 @@ body * {
     grid-area: content;
     margin: auto;
     max-width: 95%;
+  }
+  .code__snippet {
+    text-align: start;
+    line-height: calc(var(--scale-md) + var(--scale-sm));
   }
   .main-container .main__content-section {
     padding: 0;

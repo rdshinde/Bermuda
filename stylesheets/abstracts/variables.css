@@ -45,4 +45,13 @@
   --gap-xl: 2.5rem;
 
   --gap-xxl: 2.5rem;
+
+  /* Screen Size Breakpoints for root font size 100%  */
+
+  --screen-size-xsm: 30rem; /* 480px */
+  --screen-size-sm: 40rem; /* 640px */
+  --screen-size-md: 48rem; /* 768px */
+  --screen-size-lg: 64rem; /* 1024px */
+  --screen-size-xl: 80rem; /* 1280px */
+  --screen-size-xxl: 80rem; /* 1536px */
 }
