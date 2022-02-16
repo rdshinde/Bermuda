@@ -12,7 +12,7 @@
 .card-over-image,
 .card-with-dismiss,
 .card-with-badge {
-  max-width: 280px;
+  max-width: 18rem;
 }
 
 .card__header {
@@ -77,7 +77,7 @@
   font-weight: 500;
   top: 14.5px;
   right: -18px;
-  padding: 0.5rem;
+  padding: var(--scale-sm);
   width: 30%;
   background: var(--primary-color);
   color: var(--off-white);

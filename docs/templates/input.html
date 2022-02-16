@@ -14,7 +14,7 @@
       integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/introduction.css" />
+    <link rel="stylesheet" href="../styles/docs-skeleton.css" />
   </head>
   <body>
     <div class="root">
@@ -46,6 +46,7 @@
           </nav>
         </header>
         <main class="main-container">
+          <div class="aside-wrapper">
           <aside class="aside-container">
             <ul class="list">
               <div class="list__title">
@@ -81,6 +82,7 @@
               <li><a href="./grid.html"> Simplified Grid </a></li>
             </ul>
           </aside>
+          </div>
 
           <div class="main__content">
             <section class="main__content-section">
@@ -126,29 +128,29 @@
               </div>
               <div class="code__snippet border-rounded-md">
                 <pre>
-                      <code class="html border-rounded-sm shadow-lg">
-                        &lt;!-- Simple Form Control --&gt;
-
-                        &lt;form class="container"&gt;
-
-                            &lt;div class="input-group"&gt;
-                              &lt;label for="text-input"&gt; Username &lt;/label&gt;
-                              &lt;input type="text" id="text-input" /&gt;
-                            &lt;/div&gt;
-
-                            &lt;div
-                              class="input-group"&gt;
-                                &lt;label for="pwd-input"&gt; Password &lt;/label&gt; 
-                                &lt;input type="password" id="pwd-input" /&gt;
-                            &lt;/div&gt;
-
-                            &lt;div class="input-group"&gt;
-                                &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
-                            &lt;/div&gt;
-
-                        &lt;/form&gt;
-                      </code>
-                    </pre>
+                        <code class="html border-rounded-sm shadow-lg">
+                          &lt;!-- Simple Form Control --&gt;
+  
+                          &lt;form class="container"&gt;
+  
+                              &lt;div class="input-group"&gt;
+                                &lt;label for="text-input"&gt; Username &lt;/label&gt;
+                                &lt;input type="text" id="text-input" /&gt;
+                              &lt;/div&gt;
+  
+                              &lt;div
+                                class="input-group"&gt;
+                                  &lt;label for="pwd-input"&gt; Password &lt;/label&gt; 
+                                  &lt;input type="password" id="pwd-input" /&gt;
+                              &lt;/div&gt;
+  
+                              &lt;div class="input-group"&gt;
+                                  &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
+                              &lt;/div&gt;
+  
+                          &lt;/form&gt;
+                        </code>
+                      </pre>
               </div>
               <div class="divider"></div>
             </section>
@@ -186,33 +188,34 @@
               </div>
               <div class="code__snippet border-rounded-md">
                 <pre>
-                    <code class="html border-rounded-sm shadow-lg">
-                        &lt;!-- Form control with success and error messages --&gt;
-
-                        &lt;form class="container"&gt;
-                            &lt;div
-                              class="input-group required success"
-                              success-message="All looks good!"
-                            &gt;
-                              &lt;label for="text-input"&gt; Username &lt;/label&gt;
-                              &lt;input type="text" id="text-input" required /&gt;
-                            &lt;/div&gt;
-                            &lt;div
-                              class="input-group required error"
-                              error-message="Invalid input entered! Please try again."
-                            &gt;
-                              &lt;label for="pwd-input"&gt; Password &lt;/label&gt;
-                              &lt;input type="password" id="pwd-input" required /&gt;
-                            &lt;/div&gt;
-                            &lt;div class="input-group"&gt;
-                              &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
-                            &lt;/div&gt;
-                          &lt;/form&gt;
-                    </code>
-                  </pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                          &lt;!-- Form control with success and error messages --&gt;
+  
+                          &lt;form class="container"&gt;
+                              &lt;div
+                                class="input-group required success"
+                                success-message="All looks good!"
+                              &gt;
+                                &lt;label for="text-input"&gt; Username &lt;/label&gt;
+                                &lt;input type="text" id="text-input" required /&gt;
+                              &lt;/div&gt;
+                              &lt;div
+                                class="input-group required error"
+                                error-message="Invalid input entered! Please try again."
+                              &gt;
+                                &lt;label for="pwd-input"&gt; Password &lt;/label&gt;
+                                &lt;input type="password" id="pwd-input" required /&gt;
+                              &lt;/div&gt;
+                              &lt;div class="input-group"&gt;
+                                &lt;button class="btn btn-primary-outline"&gt;Submit&lt;/button&gt;
+                              &lt;/div&gt;
+                            &lt;/form&gt;
+                      </code>
+                    </pre>
               </div>
               <div class="divider"></div>
             </section>
+
             <section class="main__content-section">
               <h2 class="content__heading bold-xl text-start">
                 Checkbox and Radio Inputs
@@ -224,78 +227,92 @@
                 </p>
               </div>
               <div class="component__display">
-                <form>
-                  <div class="input-group">
-                    <label for="radio-1">
-                      <input id="radio-1" name="radio" type="radio" checked />
-                      Checked
-                    </label>
-                  </div>
-                  <div class="input-group">
-                    <label for="radio-2">
-                      <input id="radio-2" name="radio" type="radio" unchecked />
-                      Unchecked
-                    </label>
-                  </div>
-                  <div class="input-group disabled">
-                    <label for="radio-3">
-                      <input id="radio-3" name="radio" type="radio" disabled />
-                      Disabled
-                    </label>
-                  </div>
-                </form>
-                <form>
-                  <div class="input-group">
-                    <label for="checkbox-1">
-                      <input
-                        id="checkbox-1"
-                        name="checkbox"
-                        type="checkbox"
-                        checked
-                      />
-                      Checked
-                    </label>
-                  </div>
-                  <div class="input-group">
-                    <label for="checkbox-2">
-                      <input
-                        id="checkbox-2"
-                        name="checkbox"
-                        type="checkbox"
-                        unchecked
-                      />
-                      Unchecked
-                    </label>
-                  </div>
-                  <div class="input-group disabled">
-                    <label for="checkbox-3">
-                      <input
-                        id="checkbox-3"
-                        name="checkbox"
-                        type="checkbox"
-                        disabled
-                      />
-                      Disabled
-                    </label>
-                  </div>
-                </form>
+                <div>
+                  <form>
+                    <div class="input-group">
+                      <label for="radio-1">
+                        <input id="radio-1" name="radio" type="radio" checked />
+                        Checked
+                      </label>
+                    </div>
+                    <div class="input-group">
+                      <label for="radio-2">
+                        <input
+                          id="radio-2"
+                          name="radio"
+                          type="radio"
+                          unchecked
+                        />
+                        Unchecked
+                      </label>
+                    </div>
+                    <div class="input-group disabled">
+                      <label for="radio-3">
+                        <input
+                          id="radio-3"
+                          name="radio"
+                          type="radio"
+                          disabled
+                        />
+                        Disabled
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div>
+                  <form>
+                    <div class="input-group">
+                      <label for="checkbox-1">
+                        <input
+                          id="checkbox-1"
+                          name="checkbox"
+                          type="checkbox"
+                          checked
+                        />
+                        Checked
+                      </label>
+                    </div>
+                    <div class="input-group">
+                      <label for="checkbox-2">
+                        <input
+                          id="checkbox-2"
+                          name="checkbox"
+                          type="checkbox"
+                          unchecked
+                        />
+                        Unchecked
+                      </label>
+                    </div>
+                    <div class="input-group disabled">
+                      <label for="checkbox-3">
+                        <input
+                          id="checkbox-3"
+                          name="checkbox"
+                          type="checkbox"
+                          disabled
+                        />
+                        Disabled
+                      </label>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div class="code__snippet border-rounded-md">
                 <pre>
-                    <code class="html border-rounded-sm shadow-lg">
-                        &lt;!-- Disabled Input --&gt;
-
-                        &lt;div class="input-group disabled"&gt;
-                            &lt;label for="radio-3"&gt; &lt;input id="radio-3" name="radio" type="radio" disabled /&gt; Disabled&lt;/label&gt;
-                        &lt;/div&gt;
-
-                        &lt;!-- Active Input --&gt;
-
-                        &lt;div class="input-group"&gt;
-                            &lt;label for="checkbox-1"&gt; &lt;input id="checkbox-1" name="checkbox" type="checkbox" checked /&gt; Checked &lt;/label&gt; 
-                        &lt;/div&gt;
-                    </code>
-                  </pre>
+                      <code class="html border-rounded-sm shadow-lg">
+                          &lt;!-- Disabled Input --&gt;
+  
+                          &lt;div class="input-group disabled"&gt;
+                              &lt;label for="radio-3"&gt; &lt;input id="radio-3" name="radio" type="radio" disabled /&gt; Disabled&lt;/label&gt;
+                          &lt;/div&gt;
+  
+                          <!-- &lt;!-- Active Input --&gt;
+  
+                          &lt;div class="input-group"&gt;
+                              &lt;label for="checkbox-1"&gt; &lt;input id="checkbox-1" name="checkbox" type="checkbox" checked /&gt; Checked &lt;/label&gt; 
+                          &lt;/div&gt; -->
+                      </code>
+                    </pre>
               </div>
               <div class="content">
                 <p class="text-4 bold-md">
@@ -305,6 +322,7 @@
               </div>
               <div class="divider"></div>
             </section>
+
             <div class="foot__nav">
               <div class="foot__nav-last">
                 <a href="./image.html" class="btn btn-link">
@@ -343,7 +361,6 @@
         </footer>
       </div>
     </div>
-    <script src="../../components/alerts/alert.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
