@@ -1,7 +1,7 @@
 # Bermuda
 **Design your dream UIs with easy and scalable CSS.**
 
-[![Version 1.0](https://img.shields.io/badge/Version-1.0-orange.svg)]([![Fast](https://img.shields.io/badge/Fast-blue.svg)](https://bermuda-css.netlify.app))
+[![Version 1.0](https://img.shields.io/badge/Version-1.0-orange.svg)](https://bermuda-css.netlify.app)
 
 Bermuda CSS gears up you with the huge set of pre-defined CSS classes. This makes your UI designing fast, easy and off-course scalable.
 
