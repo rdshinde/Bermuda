@@ -39,7 +39,7 @@ Bermuda provides frequently used components. These are as follows:
 - [Modal](https://bermuda-css.netlify.app/docs/templates/modal.html)
 - [Ratings](https://bermuda-css.netlify.app/docs/templates/rating.html)
 - [Toast](https://bermuda-css.netlify.app/docs/templates/toast.html)
-- [Simplified](https://bermuda-css.netlify.app/docs/templates/grid.html)
+- [Simplified Grid](https://bermuda-css.netlify.app/docs/templates/grid.html)
 - And many more components are on the way.
 
 Other that these components there are tons of predefined classes which can make your UI building process a piece of cake.
@@ -63,3 +63,8 @@ Bermuda uses ![#001675](https://via.placeholder.com/10/001675?text=+) #001675.
 
 Bermuda offers pretty good docs site. You can visit [Docs Site](https://bermuda-css.netlify.app/)
 for more details.
+
+<img width="1440" alt="Screenshot 2022-02-21 at 12 49 07 PM" src="https://user-images.githubusercontent.com/67017632/154923808-bbe45680-3e1e-4e7e-a255-453af864405e.png">
+
+
+
