@@ -23,6 +23,10 @@
 .card__img-container {
   position: relative;
 }
+.card__img-container img {
+  width: 100%;
+  height: auto;
+}
 
 /* Style for cards' body content */
 .card__content {
