@@ -86,11 +86,6 @@ i:hover {
   z-index: 1;
 }
 
-/* Styling for img */
-img {
-  max-width: 100%;
-  height: auto;
-}
 /* Styling for shadow */
 .shadow-sm {
   box-shadow: 0px 0px 3px 0px var(--shadow-color);
@@ -170,5 +165,3 @@ th {
 .hide {
   display: none;
 }
-
-
