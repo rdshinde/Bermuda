@@ -36,6 +36,7 @@ Actual Skeleton Styling
   position: sticky;
   top: 0;
   z-index: 9;
+  background-color: #fff;
 }
 
 /* Aside wrapper and container styling */
